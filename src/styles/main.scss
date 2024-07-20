@@ -1,0 +1,65 @@
+@use 'header';
+@use 'variables';
+@use 'hero';
+@use 'about';
+@use 'watch';
+@use 'cast';
+@use 'faq';
+@use 'footer';
+
+@font-face {
+    font-family: Corleone;
+    src: url(../../assets/fonts/Corleone-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Corleone;
+    src: url(../../assets/fonts/Corleone-Due-Regular.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Yanone;
+    src: url(../../assets/fonts/YanoneKaffeesatz-Regular.ttf);
+    font-weight: 400;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Yanone, sans-serif;
+}
+
+@mixin title($fontSize: 40px) {
+    font-family: Corleone, sans-serif;
+}
+
+body {
+    background-color: variables.$backgroundColor;
+    color: variables.$principalFontColor;
+}
+
+h1{
+    @include title();
+    font-size: 64px
+}
+
+h2 {
+    @include title();
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 32px
+}
+
+h3 {
+    @include title();
+    font-size: 40px;
+}
+
+h4 {
+    @include title();
+    font-size: 24px;
+}

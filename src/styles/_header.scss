@@ -25,6 +25,7 @@
         img {
             width: 100px;
             border-radius: 4px;
+
             @media (max-width:768px) {
                 display: none;
             }
@@ -55,10 +56,12 @@
     }
 
     &__socials {
+        justify-content: center;
+        
         @media (max-width:768px) {
             margin-left: 10px;
         }
-        justify-content: center;
+
         &__list {
             justify-content: center;
             list-style: none;
