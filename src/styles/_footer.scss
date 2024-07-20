@@ -1,0 +1,50 @@
+@use 'variables';
+
+.footer {
+    padding: 5.6vw;
+
+    @media (max-width:768px) {
+        width: 80%;
+    }
+
+    &__container {
+        text-align: center;
+        color: variables.$principalFontColor;
+        img {
+            width: 120px;
+        }
+        p {
+            margin-top: 32px;
+            font-weight:lighter;
+            font-size: 12px;
+        }
+    }
+
+    &__links {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        &__item {
+            list-style: none;
+            img {
+                width: 18px;
+            }
+            a {
+                padding: 8px 16px;
+                color: variables.$principalFontColor;
+                text-decoration: none;
+                display: block;
+            }
+
+            .lenguage-selector {
+                display: flex;
+
+                img{
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@use 'variables';
+
+.watch {
+    padding: 5.6vw;
+    min-height: 80vh;
+
+    h2 {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    
+    &__trailers__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 16px;
+        @media (max-width:768px) {
+            display: block;
+            width: 70%;
+        }
+
+        iframe {
+            margin-top: 16px;
+            @media (max-width:768px) {
+                width: 90%;
+            }
+        }
+    }
+}
+
+.iconic-scenes {
+    &__list {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        display: grid;
+        column-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        @media (max-width:768px) {
+            display: block;
+            width: 80%;
+        }
+
+        &__item {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 4px;
+            list-style: none;
+            padding: 8px;
+            text-align: center;
+            margin-bottom: 16px;
+            background-color: variables.$secondaryFontColor;
+
+            &__text {
+                width: 250px;
+                padding: 20px;
+                height: 250px;
+                font-size: 16px;
+                margin-top: 0;
+                text-align: justify;
+                margin-right: 8px;
+                background-color: variables.$secondaryFontColor;
+            
+                p {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@use 'variables';
+
+.hero {
+    background-image: url(../images/hero_wallpaper.jpg);
+    padding: 5.6vw;
+    min-height: 100vh;
+    background-size: cover;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        width: 80%;
+        background-image: url(../images/hero_wallpaper.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 120vh;
+    }
+    
+    &__content {
+        max-width: 640px;
+
+        &__logo {
+            max-width: 120px;
+            margin: 0;
+
+        @media (max-width: 768px) {
+            max-width: 80px;
+            margin-top: 125px;
+        }
+            }
+        }
+}
+
+
